@@ -21,7 +21,7 @@ public class TextToSpeechFunction
 
     [Function("GenerateAudio")]
     public async Task<HttpResponseData> Run(
-        [HttpTrigger(AuthorizationLevel.Function, "post", Route = null)] HttpRequestData req,
+        [HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)] HttpRequestData req,
         FunctionContext context)
     {
         var log = context.GetLogger("GenerateAudio");
