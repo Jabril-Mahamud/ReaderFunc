@@ -1,0 +1,15 @@
+{
+  "profiles": {
+    "ReaderFunc": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7070"
+    },
+    "Container (Dockerfile)": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "DockerfileRunArguments": "--init",
+      "httpPort": 31953,
+      "useSSL": false
+    }
+  }
+}
